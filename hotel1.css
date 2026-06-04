@@ -1,0 +1,637 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+  }
+  body{
+    flex-direction: column;
+    color:white;
+   }
+  header{
+    position: relative;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0 60px;
+    font-size: 1.2em;
+    z-index: 1;
+    background-color: rgb(17, 18, 17);
+    
+  }
+  .logo
+  {
+    cursor: pointer;
+    display:flex;
+    align-items:left;
+    font-weight: bold;
+    font-size: 1.4em;
+    letter-spacing: 0.5px;
+    border-radius: 50%;
+    color:white;
+   
+  }
+  .logo span
+  {
+    font-family: Arial, sans-serif; 
+    font-style: italic; 
+    color: #ff0073;
+  }
+  .logo img{
+    width: 30px;
+    margin-left: -100px;
+    float: left;
+    
+  
+  }
+  
+  .menu-list  li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: color 0.5s;
+    text-decoration: none;
+     
+  }
+  .menu-list a{
+    display:inline-block;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: .3s;
+  }
+  .menu-list li.active,
+  .menu-list li:hover {
+    color: #ff0073;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  input[type=text],
+  input[type=email],
+  input[type=tel],
+  input[type=date],
+  input[type=number]
+  
+   {
+    width: 100%;
+    height: 5%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #9e0e0e;
+    box-sizing: border-box;
+   
+  }
+  
+  
+  
+  button {
+    background-color: rgb(248, 10, 137);
+    color: black;
+     padding: 10px 10px;
+    border-radius: 5px;
+    margin-right: -50px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    
+  }
+  
+  button:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 5px cyan,
+    0 0 5px cyan,0 0 5px cyan,
+    0 0 5px cyan,0 0 5px cyan;
+  }
+  
+  .container {
+    padding: 0px;
+    color: rgb(6, 6, 6);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: -10px;
+    font-size: small;
+    height: 500px; 
+    overflow-y: scroll;
+    background-color: #888;
+   
+    
+  }
+  .carousel-item img {
+    height: 400px; /* Adjust height as needed */
+    object-fit: cover;
+  }
+  
+  span.psw {
+    
+    padding-top: 10px;
+    text-align: center;
+  }
+  .about-us{
+    height: 100vh;
+    width: 100%;
+    padding: 90px 0;
+    
+  }
+  .pic{
+    height: auto;
+    width:  402px;
+  }
+  .about{
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    color:#000
+  }
+  .text{
+    width: 540px;
+  }
+  .text h2{
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .text h5{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  span{
+    color: #4070f4;
+  }
+  .text p{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+  .data{
+    margin-top: 30px;
+  }
+ 
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 0;
+    width: 50%;
+    height: 200%;
+    overflow: hidden;
+  
+    padding-top: 60px;
+     
+    
+  }
+  .modal-content {
+    background-color: white;
+    
+    margin: 5% auto 15% auto;
+   
+    border: 1px solid #888;
+    width: 50%;
+    
+   
+  }
+  
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #0ef;
+    cursor: pointer;
+  }
+  
+  
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {
+      -webkit-transform: scale(0)
+    }
+  
+    to {
+      -webkit-transform: scale(2)
+    }
+  }
+  
+  @keyframes animatezoom {
+    from {
+      transform: scale(0)
+    }
+  
+    to {
+      transform: scale(2)
+    }
+  }
+ 
+  
+  .booking__container {
+    padding-block: 0;
+  }
+  
+  .booking__form {
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    border-radius: 10px;
+    transform: translateY(-50%);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input__group {
+    flex: 1 1 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .input__group span {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+  }
+  
+  .input__group label {
+    font-weight: 500;
+    color: var(--text-dark);
+  }
+  
+  .input__group input {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    padding-block: 5px;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+  }
+  
+  .input__group input::placeholder {
+    color: var(--text-light);
+  }
+  
+  .about__container {
+    overflow: hidden;
+    display: grid;
+    gap: 2rem;
+
+  }
+  .section__subheader
+  {
+    font-size: 45px;
+    color:#9e0e0e;
+    text-align: center;
+  }
+ 
+ .section__header{
+    font-size: 25px;
+    text-align: center;
+  }
+  .section__aheader{
+    font-size: 45px;
+    text-align: center;
+    color:#9e0e0e;
+    margin-bottom: -100px;
+
+  }
+  .section__description{
+   text-align: center;
+  }
+  
+  .about__image {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .about__image img {
+    width: calc(50% - 1px); /* Adjust the width to fit two images in a row */
+    height: 40vh; /* Set the height to half of the container height */
+    object-fit: cover;
+    
+  }
+  .about__image img:hover {
+    opacity: 0.8;
+    
+  }
+  
+  .about__image img:nth-child(odd) {
+    margin-right: 1px; /* Add a small margin to the right of odd images */
+  }
+  
+  .about__image img:nth-child(n+3) {
+    margin-top: 1px; /* Add a small margin to the top of images in the second row */
+  }
+  .about__btn {
+    text-align: center; /* Center align the button */
+  }
+  .btn{
+    width: 150px; /* Set the width */
+    height: 50px; /* Set the height */
+    background-color: #0ef;
+
+  }
+  
+  
+  
+ 
+  
+    .about__container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+  
+    
+  
+  @media (width > 1024px) {
+    .room__grid {
+      gap: 2rem;
+    }
+  }
+ /* Your existing CSS styles */
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 85vh; /* Adjust the height to cover the entire viewport */
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+
+/* Make the images fullscreen */
+.mySlides img {
+  max-width: 100%; /* Set maximum width to prevent the image from overflowing */
+  max-height: 10%; /* Set maximum height to prevent the image from overflowing */
+  width: auto; /* Allow the width to adjust according to the aspect ratio */
+  height: auto; 
+  object-fit: contain;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.8s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fade animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.caption {
+  position: absolute;
+  bottom: 200px; /* Adjust the position of the caption as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Background color for the caption */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 35px;
+  font-weight: 600;
+}
+.card-container
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  padding: 10px;
+}
+.card{
+  width: 250px;
+  background-color:white;
+  border-radius: 8px;
+  margin: 10px;
+   
+}
+.card:hover{
+  transform: translateY(-10px); 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.card img{
+  width:100%;
+  height: 150px;
+  border-radius: 11px;
+  margin-top: -8px;
+} 
+.card-content{
+padding:16px;
+}
+.card  h3{
+  font-size:28px;
+  margin-bottom: 8px;
+  color:black;
+  text-align: center;
+}
+.card  h2{
+  font-size:15px;
+  margin-bottom: 8px;
+  color:black;
+  text-align: center;
+}
+.card  p{
+  background-color:white;
+  color:black;
+  padding: 8px 10px;
+  display: block;
+  text-align: center;
+}
+.card-content.btn{
+  display:inline-block;
+  padding: 8px 16px;
+ 
+  text-decoration: none;
+  border-radius: 4px;
+}
+.btn1 {
+  text-align: center; /* Center align the button */
+  width: 100px; /* Set the width */
+  height: 50px; /* Set the height */
+ 
+  padding-top: 10px;
+}
+.tab {
+  overflow: hidden;
+ 
+ 
+  margin-top: 40px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+  transition: 0.3s;
+  width: 15%;
+}
+.card-container1
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -50px;
+  padding: 10px;
+}
+.card-container2
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -40px;
+  padding: 10px;
+}
+.card-container3
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -40px;
+  padding: 10px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+
+  border-top: none;
+}
+.tablink{
+  text-align: center; /* Center align the button */
+  
+}
+.tab button.active {
+  background-color: #ff0073; /* Set your desired color for the active tab */
+  color: white; /* Set text color for the active tab */
+}
+
+/* Change background color of active tab button on hover */
+.tab button.active:hover {
+  background-color: #ff0073; /* Set your desired hover color for the active tab */
+}
+
+.hii{
+  font-size: 20px;
+  background-color: #ddd;
+  color: #000;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
